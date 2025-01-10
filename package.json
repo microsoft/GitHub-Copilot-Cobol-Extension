@@ -1,0 +1,78 @@
+{
+  "name": "cobol-sample-agent",
+  "displayName": "Cobol Sample Agent",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "microsoft.cobol-sample-agent",
+        "fullName": "Cobol Sample Agent",
+        "name": "cobol",
+        "description": "How can I help you?",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "explain",
+            "description": "Explain program"
+          },
+          {
+            "name": "info",
+            "description": "Info about the code"
+          },
+          {
+            "name": "data",
+            "description": "Explain the data division"
+          },
+          {
+            "name": "procedure",
+            "description": "Explain the procedure division"
+          },
+          {
+            "name": "gendoc",
+            "description": "Generate documentation file"
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.17.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.19.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "vscode-cache": "^0.3.0"
+  }
+}
