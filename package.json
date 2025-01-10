@@ -1,8 +1,10 @@
 {
-  "name": "cobol-sample-agent",
-  "displayName": "Cobol Sample Agent",
-  "description": "",
+  "name": "cobol-demo-agent",
+  "displayName": "Cobol Demo Agent",
+  "description": "GitHub Copilot for COBOL",
   "version": "0.0.1",
+  "icon": "logo.png",
+  "publisher": "microsoft",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -14,8 +16,8 @@
   "contributes": {
     "chatParticipants": [
       {
-        "id": "microsoft.cobol-sample-agent",
-        "fullName": "Cobol Sample Agent",
+        "id": "microsoft.cobol-demo-agent",
+        "fullName": "Cobol Demo Agent",
         "name": "cobol",
         "description": "How can I help you?",
         "isSticky": true,
@@ -53,7 +55,9 @@
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "vsce:package": "vsce package",
+    "vsce:publish": "vsce publish"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -69,10 +73,19 @@
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.19.1",
     "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "@vscode/vsce": "^3.2.1"
   },
   "dependencies": {
     "axios": "^1.7.9",
     "vscode-cache": "^0.3.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/microsoft/GitHub-Copilot-Cobol-Extension-Sample/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/GitHub-Copilot-Cobol-Extension-Sample.git"
+  },
+  "homepage": "https://github.com/microsoft/GitHub-Copilot-Cobol-Extension-Sample/blob/main/README.md"
 }

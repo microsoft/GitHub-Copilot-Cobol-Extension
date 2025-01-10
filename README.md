@@ -23,7 +23,25 @@ The extension provides the following commands:
 - `gendoc`: Generate a markdown documentation file for the COBOL program.
 
 ## Installation
+### Using vsix file
+1. Download the latest release from the [Releases](https://github.com/microsoft/GitHub-Copilot-Cobol-Extension-Sample/releases)
+2. Open Visual Studio Code.
+3. Press `Ctrl+Shift+X` to open the Extensions view.
+4. Click on the `...` icon in the top-right corner of the Extensions view and select `Install from VSIX...`.
+5. Select the downloaded `.vsix` file and click `Install`.
 
+Alternatively, you can install the extension using the command line:
+```sh
+code --install-extension path/to/GitHub-Copilot-Cobol-Extension.vsix
+```
+
+To uninstall the extension, you can use the command line:
+```sh
+code --uninstall-extension GitHub-Copilot-Cobol-Extension
+```
+
+
+### Using Code
 1. Clone the repository:
     ```sh
     git clone https://github.com/your-repo/GitHub-Copilot-Cobol-Extension.git
@@ -44,26 +62,29 @@ The extension provides the following commands:
     ```sh
     code .
     ```
-6. Press `F5` to start debugging the extension.
+6  Open extension.ts file and press `F5` to start debugging the extension.
+
 
 ## Usage
 
 1. Open a COBOL file in Visual Studio Code.
-2. Use the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS) to run the available commands.
-3. Select the desired command to analyze or generate documentation for the COBOL program.
+2. Open GitHub Copilot Chat
+3. type @Cobol select the command you want to run (e.g., `/explain`, `/info`, `/data`, `/procedure`, `/gendoc`).
+4. Press `Enter` to execute the command.
+
 
 ## Contributing
 
-Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute.
+Contributions are welcome! Please see the [CONTRIBUTING.md](/CONTRIBUTING.md) file for guidelines on how to contribute.
 
 ## Support
 
-For support, please refer to the [SUPPORT.md](SUPPORT.md) file.
+For support, please refer to the [SUPPORT.md](/SUPPORT.md) file.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
 
 ## Security
 
-For security issues, please refer to the [SECURITY.md](SECURITY.md) file.
+For security issues, please refer to the [SECURITY.md](/SECURITY.md) file.
