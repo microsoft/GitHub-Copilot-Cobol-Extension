@@ -300,7 +300,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   // create participant
   const tutor = vscode.chat.createChatParticipant(
-    "microsoft.cobol-sample-agent",
+    "microsoft.cobol-demo-agent",
     handler
   );
 

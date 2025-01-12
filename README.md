@@ -37,7 +37,7 @@ code --install-extension path/to/GitHub-Copilot-Cobol-Extension.vsix
 
 To uninstall the extension, you can use the command line:
 ```sh
-code --uninstall-extension GitHub-Copilot-Cobol-Extension
+code --uninstall-extension path/to/GitHub-Copilot-Cobol-Extension.vsix
 ```
 
 
