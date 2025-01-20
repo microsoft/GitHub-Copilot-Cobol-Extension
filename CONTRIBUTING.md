@@ -20,6 +20,7 @@ Before submitting a pull request please make sure the following is done:
 3. Ensure that the code build and runs without any errors
 4. If required update the README.md
 5. Complete the [CLA](#contributor-license-agreement-cla)
+6. Update the [changelog](changelog.md) with a summary of your changes
 
 ### Code of Conduct
 
