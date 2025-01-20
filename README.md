@@ -88,3 +88,7 @@ This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file
 ## Security
 
 For security issues, please refer to the [SECURITY.md](/SECURITY.md) file.
+
+## Changelog
+
+For a list of changes, see the [changelog](/changelog.md).
